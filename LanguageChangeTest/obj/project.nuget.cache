@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "GdDoPxnlz7eImhEEXmCYj7X7ppEF7pQvUW8gzikT/peMMmLqqisO87nkR321dAetNmU2/ATtCegvo2DvOZN6yA==",
+  "dgSpecHash": "srwwLkdaxsCuCiK66OWGPPdbu0jxoz4L1iBS/ve1VuXQ0ecsJk1mWYe3Q7mLG2R65TsfC8TJb/iG1ZsVHd+YNA==",
   "success": true,
   "projectFilePath": "E:\\BSTU\\Lab9SoftwareTesting\\LanguageChangeTest\\LanguageChangeTest.csproj",
   "expectedPackageFiles": [
@@ -17,6 +17,7 @@
     "C:\\Users\\artem\\.nuget\\packages\\nunit\\3.13.3\\nunit.3.13.3.nupkg.sha512",
     "C:\\Users\\artem\\.nuget\\packages\\nunit.analyzers\\3.6.1\\nunit.analyzers.3.6.1.nupkg.sha512",
     "C:\\Users\\artem\\.nuget\\packages\\nunit3testadapter\\4.4.2\\nunit3testadapter.4.4.2.nupkg.sha512",
+    "C:\\Users\\artem\\.nuget\\packages\\selenium.support\\4.15.0\\selenium.support.4.15.0.nupkg.sha512",
     "C:\\Users\\artem\\.nuget\\packages\\selenium.webdriver\\4.15.0\\selenium.webdriver.4.15.0.nupkg.sha512",
     "C:\\Users\\artem\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512",
     "C:\\Users\\artem\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512"

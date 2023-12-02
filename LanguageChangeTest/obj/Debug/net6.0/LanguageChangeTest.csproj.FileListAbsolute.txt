@@ -105,3 +105,4 @@ E:\BSTU\Lab9SoftwareTesting\LanguageChangeTest\obj\Debug\net6.0\refint\LanguageC
 E:\BSTU\Lab9SoftwareTesting\LanguageChangeTest\obj\Debug\net6.0\LanguageChangeTest.pdb
 E:\BSTU\Lab9SoftwareTesting\LanguageChangeTest\obj\Debug\net6.0\LanguageChangeTest.genruntimeconfig.cache
 E:\BSTU\Lab9SoftwareTesting\LanguageChangeTest\obj\Debug\net6.0\ref\LanguageChangeTest.dll
+E:\BSTU\Lab9SoftwareTesting\LanguageChangeTest\bin\Debug\net6.0\WebDriver.Support.dll

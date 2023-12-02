@@ -1,8 +1,8 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using NUnit.Framework;
+using OpenQA.Selenium.Support.UI;
 using System;
-using System.Threading;
 
 namespace LanguageChangeTest
 {
@@ -23,19 +23,17 @@ namespace LanguageChangeTest
         public void LanguageChangeTest()
         {
             driver.Navigate().GoToUrl("https://www.mts.by");
-            Thread.Sleep(25000);
-            driver.Manage().Window.Maximize();
 
-            IWebElement changeLanguageButton = driver.FindElement(By.XPath("/html/body/div[6]/header/div[1]/div/div/div[2]/div/div/a[2]"));
-            Thread.Sleep(10000);
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
+
+            IWebElement changeLanguageButton = wait.Until(driver => driver.FindElement(By.XPath("/html/body/div[6]/header/div[1]/div/div/div[2]/div/div/a[2]")));
             changeLanguageButton.Click();
 
-            IWebElement englishTextButtonForCompare = driver.FindElement(By.XPath("/html/body/div[6]/header/div[1]/div/div/div[1]/div[1]/a"));
-            Thread.Sleep(10000);
+            IWebElement englishTextButtonForCompare = wait.Until(driver => driver.FindElement(By.XPath("/html/body/div[6]/header/div[1]/div/div/div[1]/div[1]/a")));
+
             string actualText = englishTextButtonForCompare.Text;
             englishTextButton = "Private customers";
             Assert.AreEqual(englishTextButton, actualText);
-            Thread.Sleep(10000);
         }
 
         [TearDown]
