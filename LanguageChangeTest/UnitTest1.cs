@@ -10,7 +10,7 @@ namespace LanguageChangeTest
     {
         private IWebDriver driver;
         private string baseURL;
-        private string englishTextButton;
+        public string englishTextButton;
 
         [SetUp]
         public void Setup()
