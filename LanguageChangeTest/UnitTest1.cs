@@ -87,10 +87,11 @@ namespace Tests
             IWebElement refreshButton = driver.FindElement(By.XPath("//*[@id=\"main\"]/div/div[2]/div[3]/div[1]/div[2]/div[2]/div/div/div[2]/main/div[1]/div[2]/div/div[3]/button"));
             Thread.Sleep(2000);
             refreshButton.Click();
-            Thread.Sleep(1000);
+            Thread.Sleep(3000);
 
             IWebElement settingsText = driver.FindElement(By.XPath("//*[@id=\"main\"]/div/div[2]/div[3]/div[1]/div[2]/div[2]/div/div/div[2]/main/div[1]/div[1]/h1"));
-            Assert.AreEqual("Settings", settingsText.Text, "Сайт переведен на английский");
+            Thread.Sleep(3000);
+            Assert.AreEqual("Settings", settingsText.Text, "Сайт не переведен на английский");
         }
 
         [TearDown]
