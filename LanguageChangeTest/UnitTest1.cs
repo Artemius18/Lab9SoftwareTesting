@@ -91,7 +91,7 @@ namespace Tests
 
             IWebElement TextButton = driver.FindElement(By.XPath("//*[@id=\"main\"]/div/div[2]/div[3]/header/button[1]"));
             Thread.Sleep(3000);
-            Assert.AreEqual("Explore remium", TextButton.Text, "Сайт не переведен на английский");
+            Assert.That(TextButton.Text.ToString(), Is.EqualTo("Explore Premium"), "Сайт не переведен на английский");
         }
 
         [TearDown]
