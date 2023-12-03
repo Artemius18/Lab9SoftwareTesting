@@ -89,22 +89,29 @@ namespace Tests
             refreshButton.Click();
             Thread.Sleep(3000);
 
-            IWebElement TextButton = driver.FindElement(By.XPath("//*[@id=\"main\"]/div/div[2]/div[3]/header/button[1]"));
-            Thread.Sleep(3000);
-            Assert.That(TextButton.Text.ToString(), Is.EqualTo("Explore remium"), "Сайт не переведен на английский");
+            //IWebElement TextButton = driver.FindElement(By.XPath("//*[@id=\"main\"]/div/div[2]/div[3]/header/button[1]"));
+            //Thread.Sleep(3000);
+            //Assert.That(TextButton.Text.ToString(), Is.EqualTo("Explore remium"), "Сайт не переведен на английский");
+
+            
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+            IWebElement TextButton = wait.Until(driver => driver.FindElement(By.XPath("//*[@id=\"main\"]/div/div[2]/div[3]/header/button[1]")));
+            Assert.That(TextButton.Text.ToString(), Is.EqualTo("Explore Premium"), "Сайт не переведен на английский");
+
+
         }
 
         [TearDown]
         public void TearDown()  
         {
-            //try
-            //{
-            //    driver.Quit();
-            //}
-            //catch (Exception ex)
-            //{
-            //    Console.WriteLine("Error: " + ex.Message);
-            //}
+            try
+            {
+                driver.Quit();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
         }
     }
 }
